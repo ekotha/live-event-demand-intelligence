@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Local data
+data/*
+
+# Allow only the sample folder
+!data/sample/
+!data/sample/**
+
+# Explicit private folders (clarity)
+data/raw/
+data/private/
+data/tmp/
+
+# Database dumps/backups (anywhere)
+*.dump
+*.bak
+*.sqlite
+*.db
+
+# Secrets
+.env
