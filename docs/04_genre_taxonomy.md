@@ -184,3 +184,11 @@ Future improvement:
 
 
 
+\## Implementation Note (v1)
+
+In early sprints, `dim\_artist.primary\_super\_genre` is treated as the canonical super genre for the artist, and `fact\_market\_event.super\_genre` is treated as the canonical super genre for events.
+
+
+
+In later sprints, both fields should be populated via `dim\_genre\_map` (or equivalent transformation logic), so marts do not rely on manual or seed-only labels.
+
